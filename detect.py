@@ -5,7 +5,7 @@ import pandas as pd
 from luminol import anomaly_detector
 from luminol.modules.anomaly import Anomaly
 
-sold_items = 'data/sold-items.csv'
+sold_items = 'data/sold-items-de-summer-2018.csv'
 pd.read_csv(sold_items)
 
 detector = anomaly_detector.AnomalyDetector(time_series=sold_items)
